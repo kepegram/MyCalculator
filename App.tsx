@@ -11,7 +11,7 @@ export default function App() {
       
       <View style={styles.calculatorTotal}>
         <TextInput
-          style={styles.textSize}
+          style={styles.totalSize}
           value={calcTotal}
         />
       </View>
@@ -24,13 +24,13 @@ export default function App() {
           <Text style={styles.textSize}>C</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        style={styles.numButton}
+        style={styles.clearButton}
         onPress={() => console.log("you have pressed ")}
         >
           <Text style={styles.textSize}></Text>
       </TouchableOpacity>
       <TouchableOpacity
-        style={styles.numButton}
+        style={styles.clearButton}
         onPress={() => console.log("you have pressed ")}
         >
           <Text style={styles.textSize}></Text>
@@ -46,7 +46,7 @@ export default function App() {
       <View style={styles.calculatorLayout}>
       <TouchableOpacity
         style={styles.numButton}
-        onPress={() => setCalcTotal}
+        onPress={() => console.log('you have pressed 7')}
         >
           <Text style={styles.textSize}>7</Text>
       </TouchableOpacity>
@@ -189,5 +189,9 @@ const styles = StyleSheet.create({
   textSize: {
     fontSize: 50,
     color: 'white'
+  },
+  totalSize: {
+      fontSize: 80,
+      color: 'white'
   }
 });
